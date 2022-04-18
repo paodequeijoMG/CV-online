@@ -8,6 +8,7 @@ body {
     min-width: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
     gap: 2rem;
     padding: 2% 3% 2% 3%;
@@ -38,7 +39,7 @@ h3{
 }
 
 p, li, ul {
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 a {
@@ -49,13 +50,13 @@ a {
 
 .coluna1 {
     background-color: #2E75B6;
-    min-width: 200px;
-    max-width: 600px;
-    flex-basis: auto;
-    flex-grow: 1.5;
+    min-width: 300px;
+    max-width: 400px;
+    flex: 1 1;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
     border-radius: 0.5rem;
     margin: 2% 0 2% 3%;
+    padding: auto;
 }
 
 .coluna1 h1{
@@ -141,9 +142,22 @@ li {
 
 .coluna2 {
     min-width: 300px;
-    flex-basis: 50%;
-    flex-grow: 1.5;
+    max-width: 800px;
+    flex: 1 2;
     margin: 2% 3% 2% 0;
+}
+
+.coluna2-objetivo {
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    margin-bottom: 2rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.coluna2-objetivo p {
+    padding: 1rem;
+    line-height: 1.5rem;
 }
 
 .coluna2-educação-formação {
@@ -163,6 +177,13 @@ li {
 .coluna2-item1 {
     margin: 1rem 0 1rem 0;
 }
+
+.border-line {
+    border-bottom: 5px solid #eee;
+    height: 2px;
+    margin: 0 1rem 0 1rem;
+}
+
 .coluna2-educação-formação li {
     line-height: 2rem;
 }
@@ -280,4 +301,8 @@ input[type=button] {
     cursor: pointer;
     width: 100%;
     height: 2rem;
+}
+
+.titulo-projeto {
+    font-size: 16pt;
 }
